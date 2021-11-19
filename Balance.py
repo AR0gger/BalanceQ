@@ -48,7 +48,6 @@ class Reaction:
     def get_coeffs(self):
         mat, atoms = self.set_matrix()
         zeros = Matrix.zeros(len(atoms), 1)
-        # s = mat.gauss_jordan_solve(zeros)[0].subs({"tau0": 1, "tau1": 1, "tau2": 1}).tolist()     #hasta 3 var libres
         first = mat.gauss_jordan_solve(zeros)[0]
         second = "".join([str(x) for x in first.values()])
         r = set(re.findall("tau.", second))                         # de tau0 a tau9
