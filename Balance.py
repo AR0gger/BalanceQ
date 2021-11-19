@@ -6,9 +6,6 @@ import re
 
 # modos: redox(ácido y básico), ácido-base, desplazamiento, dismutación
 # cuando falta algo de algún lado?
-# cargas?
-# si hay más de una opción? cómo elegir
-
 
 class Reaction:
 
